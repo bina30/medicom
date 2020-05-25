@@ -1,23 +1,1010 @@
-<html>
-<head>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="container-fluid">
-  <h1>Two Unequal Responsive Columns</h1>
-  <p>Resize the browser window to see the effect.</p>
-  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
-  <div class="row">
-    <div class="col-sm-6" style="background-color:lavender;">.col-sm-4</div>
-    <div class="col-sm-6" style="background-color:lavenderblush;">.col-sm-8</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   
+    <style>
+      
+body {
+	font-family: "Open Sans", sans-serif;
+}
+h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #8fbc54;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+        body{ font-family: "SourceSansPro",sans-serif;}
+        .header{ background-color: #2b96cc;}
+        .navbar-nav {font-size: 14px;}
+
+        .btn{font-size: 14px;}
+        .navbarmenu{ border-bottom: 1px solid white; padding-bottom: 20px;}
+        .navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+
+  border-bottom: 4px solid white
+}
+.header_title{ font-size: 35px; }
+.header_txt{ font-size: 18px;}
+
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+
+.h3_one{font-size: 43px; color: #2b96cc;}
+.p_one{font-size: 18px ; color: #646464;}
+.h3_two{font-size: 43px; }
+.h3_four{font-size: 43px;color: #2b96cc; }
+.p_four{font-size: 18px; color: #646464; }
+.p_two{font-size: 18px ; }
+.mobile_hand{ background-color:#2b96cc; color: white;}
+.mda { font-size: 20px;}
+.mda_p { font-size: 16px;}
+.button { background-color:#2b96cc;  }
+#exampleFormControlTextarea1{ height:250px}
+
+h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #8fbc54;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 0 auto;
+
+}
+
+
+.hero1 .slide {background-image: url(images/hero_bg.png); background-repeat: no-repeat; height: 537px;background-position: right;
+
+                    background-color: #2b96cc;}
+
+ 
+.text-center {
+    text-align: center;
+}
+.testimonials {
+    padding: 50px 0;}
+
+    .colourfull-row {
+    background: url(../images/colourfull-line.jpg) center top repeat-x;
+    height: 3px;
+}
+footer.light {
+    background: #fafafa;
+    color: #6c6c6c;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+footer {
+    padding: 40px 0 15px;
+    line-height: 23px;
+}
+
+.footer-nav li {
+    float: left;
+    width: 50%;
+    line-height: 38px;
+}
+footer.light .tweet i {
+    color: #2b96cc;
+}
+.tweet i {
+    float: left;
+    font-size: 20px;
+    margin-top: 11px;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+ 
+}
+.tweet p {
+    padding: 10px 0 0 30px;
+    margin-bottom: 10px;
+}
+p {
+    margin: 0 0 25px;
+       
+
+}
+footer.light .newsletter i {
+    color: #393939;
+}
+.newsletter i {
+    float: left;
+    font-size: 20px;
+    margin-top: 8px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;}
+    .newsletter p {
+    padding: 0 0 15px 30px;
+    margin-bottom: 10px;
+}
+p {
+    margin: 0 0 25px;
+}
+footer.light .newsletter input[type="text"], footer.light .newsletter input[type="email"] {
+    background: #fff;
+}
+.newsletter input[type="text"], .newsletter input[type="email"] {
+    margin-right: 0;
+    width: 100%;
+    box-shadow: none;
+}
+input, select, textarea {
+    border: 1px solid #F4F4F4;
+    color: #A5A5A5;
+    font-family: inherit;
+    font-size: 13px;
+    margin: 0 10px 7px 0}
+    .newsletter .btn {
+    min-width: 117px;
+    padding: 8px 12px 6px;
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.btn-default {
+  color:white;
+    background-color: #2B96CC;
+    box-shadow: 0 3px 0 #1B83B8;
+    -moz-box-shadow: 0 3px 0 #1b83b8;
+    -webkit-box-shadow: 0 3px 0 #1b83b8;}
+
+
+    footer.light .footer-nav li a {
+    color: #6c6c6c;
+}
+.btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+footer h4 span {
+    padding-bottom: 7px;
+    display: inline-block;
+    margin-bottom: -1px;
+}
+footer h4 span {
+    border-bottom: 1px solid #2b96cc;
+}
+a {
+    text-decoration: none;
+}
+a {
+    background: transparent;
+}
+a {
+    color: #428bca;
+}
+
+.contact-widget p {
+    padding-left: 35px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+p {
+    margin: 0 0 25px;}
+
+    footer.light .contact-widget i {
+    color: #616161;
+}
+.contact-widget i {
+    float: left;
+    font-size: 26px;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;}
+    footer.light .contact-widget p a {
+    color: #616161;
+}
+footer h4 span {
+    padding-bottom: 7px;
+    display: inline-block;
+    margin-bottom: -1px;
+}
+footer h4 span {
+    border-bottom: 1px solid #2b96cc;
+}
+footer.light h4 {
+    border-bottom: 1px solid #ebebeb;
+}
+.footer-widget h4 {
+    color: #2B96CC;
+}
+footer h4 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+footer h4 {
+    color: #2b96cc;
+}
+h4, .h4 {
+    font-size: 23px;
+    font-weight: 600;
+}
+h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #4e4e4e;
+}
+footer {
+    line-height: 23px;
+}
+.social3 li a i {
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin: 0 1.5px 6px;
+    display: block;
+    width: 31px;
+    height: 31px;
+    font-size: 17px;
+    color: #929292;
+    line-height: 29px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;}
+    .social3 li {
+    text-align: center;
+}
+.social3 li {
+    display: inline-block;
+    text-align: center;
+}
+.social3 {
+    padding: 10px 0;
+    margin: 0;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+footer.light .copyright {
+    background: #f5f5f5;
+    border-bottom: 1px solid #e6e6e6;
+    color: #646464;
+    margin: 30px 0;
+    font-size: 12px;
+    padding: 10px 0 8px;
+}
+.text-center {
+    text-align: center;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+img {
+    max-width: 100%;
+}
+.colourfull-row {
+    background: url(images/colourfull-line.jpg) center top repeat-x;
+    height: 3px;
+}
+.row::before, .row::after {
+    display: table;
+    content: " ";
+}
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.testimonials h1 {
+    color: #2B96CC;
+}
+h1, .h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.testimonials p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 940px;
+    margin: 0 auto 10px;
+}
+.testimonials-patient-detail {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.owl-carousel .owl-wrapper::after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.row::after {
+    clear: both;
+}
+.row::before, .row::after {
+    display: table;
+    content: " ";
+}
+.testimonials-carousel .owl-controls, .meet-doctors-carousel .owl-controls {
+    position: relative;
+    top: 5px;
+    right: 0;
+    left: 0;
+}
+.testimonials {
+    padding: 50px 0;
+}
+.testimonials-carousel .owl-pagination .owl-page.active, .testimonials-carousel .owl-pagination .owl-page:hover, .meet-doctors-carousel .owl-pagination .owl-page.active, .meet-doctors-carousel .owl-pagination .owl-page:hover {
+    background-color: #2b96cc;
+}
+.testimonials-carousel .owl-pagination .owl-page, .meet-doctors-carousel .owl-pagination .owl-page {
+    background-color: #434343;
+    cursor: pointer;
+    display: inline-block;
+    height: 4px;
+    text-indent: -999px;
+    margin: 0 2px;
+    width: 25px;
+}
+.owl-controls .owl-buttons div, .owl-controls .owl-page {
+    cursor: pointer;
+}
+
+.img-thumbnail {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    padding: 4px;
+    line-height: 1.428571429;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+img { 
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+img {
+    max-width: 100%;
+}
+*, ::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.testimonials-patient-detail {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.owl-carousel .owl-item {
+    cursor: move;
+}
+.text-center {
+    text-align: center;
+}
+
+.testimonials h1 {
+    color: #2B96CC;
+}
+.handmobile_sec{ padding-bottom: 0px;}
+
+@media only screen and (max-width: 1200px) {
+    .h3_one{font-size: 28px; color: #2b96cc;}
+   
+    .slide{ background:none; height: auto; }
+    .hero1 .slide{ background:none; height: auto; }
+}
+
+    </style>
+    <title>psd to html</title>
+  </head>
+  <body>
+    <section class="header">
+        <div class="container ">
+          
+
+              <nav class="navbar navbar-expand-lg navbar-light navbarmenu">
+                <a class="navbar-brand  " href="#"><img src="images/top_logo.png" ></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
+                  <ul class="navbar-nav ml-auto" style=" float:right">
+                    <li class="nav-item active">
+                      <a class="nav-link text-white " href="#">Home      <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#"> About Us   <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">  pages   <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link text-white"  href="#">  DEPARTMENTS  <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">  gallery  <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link text-white" href="#"> blog <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link text-white" href="#"> shop<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Contact Us <span class="sr-only">(current)</span></a>
+                      </li>
+
+                    
+                  </ul>
+                </div>
+              </nav>
+
+
+
+    </section>
+    <section style="background-color:#2b96cc;"> 
+      
+      <div class="container hero1">
+      <div class="bs-example slide ">
+
+      <div id="myCarousel" class="carousel text-white" data-ride="carousel"  >
+          <!-- Carousel indicators -->
+          <ol class="carousel-indicators" >
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for carousel items -->
+          <div class="carousel-inner text-left py-5">
+              <div class="carousel-item active col-12 mx-auto" style="width: 400px;">
+                  <h1 class="text-uppercase header_title pt-5 text-white">life can be <strong>better</strong></h1>
+              <p class="header_txt pb-2" >Medicom dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat.</p>
+                  <p>  <button type="button" class="btn btn-outline-light text-uppercase">read more</button> or 
+                      <button type="button" class="btn btn-outline-light text-uppercase">buy theme</button></p>
+              </div>
+              <div class="carousel-item col-12"  style="width: 400px;">
+                  <div class="carousel-item active" style="width: 400px;">
+                      <h1 class="text-uppercase header_title pt-5">life can be <strong>better</strong></h1>
+                  <p class="header_txt pb-2" >Medicom dolor sit amet, consectetuer adipiscing elit, sed
+                      diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                      aliquam erat volutpat.</p>
+                      <p>  <button type="button" class="btn btn-outline-light text-uppercase">read more</button> or 
+                          <button type="button" class="btn btn-outline-light text-uppercase">buy theme</button></p>
+                  </div>
+              </div>
+              
+              <div class="carousel-item col-12"   style="width: 400px;">
+                  <div class="carousel-item active" style="width: 400px;">
+                      <h1 class="text-uppercase header_title pt-5">life can be <strong>better</strong></h1>
+                  <p class="header_txt pb-2" >Medicom dolor sit amet, consectetuer adipiscing elit, sed
+                      diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                      aliquam erat volutpat.</p>
+                      <button type="button" class="btn btn-outline-light text-uppercase pb-5 " >read more</button>
+                      <p >   or 
+                        </p>
+                        <button type="button" class="btn btn-outline-light text-uppercase"  >buy theme</button>
+                        <button type="button" class="btn btn-outline-light text-uppercase" >buy theme</button>
+                  </div>
+              </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+             
+          </a>
+      </div>
   </div>
 </div>
+</section>
+
+    <section>
+        <div class=" container-fluid  text-center  py-5 my-5">  
+           
+                <div class=" container ">
+                    <div class="row text-center">
+                    <div class="col-12 mx-auto">
+           <h3 class="h3_one mx-auto text-white" >Medicom is Incredibly Awesome Design.</h3>
+           <p class="p_one">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+            aliquam erat volutpat. Nam vitae felis pretium, euismod ipsum nec</p>
+        </div></div></div>
+        <div><img src="images/four_sec.png" class="img-fluid"></div>
+        </div>
+    </section>
+
+
     
 
-</body>
+    <section>
+        <div class=" container-fluid mobile_hand pt-5">  
+           
+                <div class=" container   ">
+                    <div class="row text-center ">
+                        <div class="mx-auto"><h3 class="h3_two text-center text-white" >Why Medicom is so Awesome?</h3>
+                            <p class="p_two">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                             aliquam erat volutpat. Nam vitae felis pretium, euismod ipsum nec</p></div>
+                        
+                    <div class="col-lg-4 pt-5 handmobile_sec">
+                        <div class="media">
+                            <div class="media-body">
+                                <h5 class="mt-0 mda text-right">Our Advice</h5>
+                                <p class="mda_p text-right">if you need a doctor for to consectetuer</p>
+                            </div>
+                            <img class="ml-3 px-2 py-2  rounded-circle" src="images/adviser.png" alt=""  style="border :2px solid white">
+                          </div>
+                          <div class="media py-5 pr-5 " >
+                            <div class="media-body">
+                                <h5 class="mt-0 mda text-right">Our Advice</h5>
+                                <p class="mda_p text-right">if you need a doctor for to consectetuer</p>
+                            </div>
+                            <img class="ml-3 px-2 py-2  rounded-circle" src="images/adviser.png" alt=""  style="border :2px solid white">
+                          </div>
+                          <div class="media">
+                            <div class="media-body">
+                                <h5 class="mt-0 mda text-right">Our Advice</h5>
+                                <p class="mda_p text-right">if you need a doctor for to consectetuer</p>
+                            </div>
+                            <img class="ml-3 px-2 py-2  rounded-circle" src="images/adviser.png" alt=""  style="border :2px solid white">
+                          </div>
+        </div>
+    
+        <div class="col-lg-4 pt-5  handmobile_sec">
+           <img src="images/hand_img.png" class="img-fluid">
+         </div>
+         <div class="col-lg-4  pt-5  handmobile_sec">
+            <div class="media">
+                <img class="align-self-start mr-3 px-2 py-2  rounded-circle" src="images/adviser.png" alt=""  style="border :2px solid white">
+                <div class="media-body">
+                  <h5 class="mt-0 mda text-left">Our Advice</h5>
+                  <p class="mda_p text-left">if you need a doctor for to consectetuer</p>
+      
+                </div>
+              </div>
+              <div class="media py-5 pl-5">
+                <img class="align-self-start mr-3 px-2 py-2 rounded-circle" src="images/adviser.png" alt=""  style="border :2px solid white">
+                <div class="media-body">
+                  <h5 class="mt-0 mda text-left">Our Advice</h5>
+                  <p class="mda_p text-left">if you need a doctor for to consectetuer</p>
+      
+                </div>
+              </div>
+              <div class="media">
+                <img class="align-self-start mr-3 px-2 py-2  rounded-circle" src="images/adviser.png" alt=""  style="border :2px solid white">
+                <div class="media-body">
+                  <h5 class="mt-0 mda text-left">Our Advice</h5>
+                  <p class="mda_p text-left">if you need a doctor for to consectetuer</p>
+      
+                </div>
+              </div>
+
+              
+         </div>
+    </div></div>
+        </div>
+    </section>
+    <section>
+
+<div class="container py-5">
+    <div class="row text-center">
+        <div class="col-8 mx-auto"><h3 class="h3_four">Make an appointment</h3>
+            <p class="p_four" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+        
+<div class="col-lg-6 py-5"><img src="images/left_img.png" class="img-fluid"></div>
+<div class="col-lg-6 py-5"><form>
+  <div class="row">
+    <div class="col-6 form-group">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col-6 form-group">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+    <div class="form-group col-6">
+     
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="col-6">
+      
+      <input type="text" class="form-control" id="validationCustom03" placeholder="phone no" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+</div>
+<div class="form-group col-6">
+
+  <select id="inputState" class="form-control" >
+    <option selected>select gender</option>
+    <option>male</option>
+    <option>female</option>
+  </select>
+</div>
+
+<div class="form-group col-6">
+  <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+    <input placeholder="Select date" type="text" id="example" class="form-control">
+   
+    <i class="fas fa-calendar input-prefix"></i>
+  </div>
+
+
+</div>
+<div class="col-12"> <div class="form-group">
+
+  <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="message"></textarea>
+</div></div>
+
+
+<div class="col-12 text-left"> 
+
+  <button type="button" class="btn button font-weight-bold  btn-lg  btn-info  text-uppercase">submit</button>
+</div></div>
+</form></div>
+
+    </div>
+</div>
+
+    </section>
+    
+  <section class="my-5 py-5"><div class="container">
+    <div class="row">
+      <div class="col-md-8 col-center m-auto">
+        <h2>What Our patients Say About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Nam vitae felis pretium, euismod ipsum nec, placerat turpis. Aenean eu gravida arcu, et consectetur
+          orci Quisque posuere dolor in malesuada fermentum.</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Carousel indicators -->
+          <ol class="carousel-indicators  ">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>   
+          <!-- Wrapper for carousel items -->
+          <div class="carousel-inner">
+            <div class="item carousel-item active">
+              <div class="img-box"><img src="/examples/images/clients/1.jpg" alt=""></div>
+             
+              <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+            </div>
+            <div class="item carousel-item">
+              <div class="img-box"><img src="/examples/images/clients/2.jpg" alt=""></div>
+             
+              <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+            </div>
+            <div class="item carousel-item">
+              <div class="img-box"><img src="/examples/images/clients/3.jpg" alt=""></div>
+             
+              <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page">
+            <span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div>
+
+            
+          <div class="owl-page active"><span class=""></span>
+          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev"></a>
+            
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          </div> 
+          </a>
+        </div>
+      </div>
+    </div>
+  </div></section>
+    <section>
+      <div class="container-fluid"><div class="colourfull-row"></div></div>
+    </section>
+    
+ 
+    <footer id="footer" class="light">
+    	
+      <div class="container">
+            
+        <div class="row">
+        
+                <div class="col-md-3">
+                      
+            <!-- Footer Widget
+            ============================================= -->
+            <div class="footer-widget">
+                          
+              <h4><span>Medicom</span></h4>
+                          
+              <ul class="footer-nav list-unstyled clearfix">
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Home</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Doctors</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>About US</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Departments</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Services</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Blog</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Why US</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Medical Care</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Specilaties</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Timetable</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Events</a></li>
+                              <li><a href="#."><i class="fa fa-long-arrow-right"></i>Contact Us</a></li>
+                          </ul>
+              
+                      </div>
+            
+                  </div>
+          
+                <div class="col-md-3">
+          
+            <!-- Footer Widget
+            ============================================= -->
+                    <div class="footer-widget">
+                          
+              <h4><span>newsletter</span></h4>
+                          
+              <div class="newsletter clearfix">
+                          
+                <i class="fa fa-envelope"></i>
+                              <p class="newsletter-text">Sign up with your name and email to
+      get updates fresh updates.</p>
+              
+              <div class="success" id="message-news" style="display:none;">Thank you! You have successfully subscribed.</div>
+              <form name="newsletter_form" id="newsletter_form" method="post" action="submit.php" onsubmit="return false">
+                              <input type="text" name="news_name" id="news_name" placeholder="Your Name" onkeypress="removeChecks();">
+                              <input type="email" name="news_email_address" id="news_email_address" placeholder="Email Address" onkeypress="removeChecks();">
+                              <input type="submit" value="subscribe" class="btn btn-default btn-rounded" onclick="validateNewsletter();">
+                          </form>
+              
+                          </div>
+                      </div>
+            
+                  </div>
+          
+                <div class="col-md-3">
+          
+            <!-- Footer Widget
+            ============================================= -->
+            <div class="footer-widget">
+              
+              <h4><span>Latest Tweets</span></h4>
+              
+              <div class="twitter-widget">
+                
+                <div class="tweet">
+                  <i class="fa fa-twitter"></i>
+                  <p><a href="#">@Rotography</a> Please kindly use our Support Forum: <a href="#.">pixelatic.co.uk.</a>
+                  <span>about a month ago</span>
+                  </p>
+                </div>
+              
+                <div class="tweet">
+                  <i class="fa fa-twitter"></i>
+                  <p><a href="#">@Rotography</a> Please kindly use our Support Forum: <a href="#.">pixelatic.co.uk.</a>
+                  <span>about a month ago</span>
+                  </p>
+                </div>
+                
+              </div>
+              
+            </div>
+            
+                  </div>
+          
+                <div class="col-md-3">
+                     
+            <!-- Footer Widget
+            ============================================= -->
+            <div class="footer-widget">
+                      
+              <h4><span>get in touch</span></h4>
+                          <p>Medico Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+                          
+              <div class="contact-widget">
+                            <i class="fa fa-home"></i><p>Medicom Ltd, Manhattan 1258, New York, USA Lahore</p>
+                <i class="fa fa-globe"></i><p><a href="#.">www.medicom.com</a></p>
+                              <i class="fa fa-mobile"></i><p class="phone-number">(+1) 234 567 8901</p>
+                          </div>
+              
+              <ul class="social3 clearfix">
+                <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#."><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#."><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#."><i class="fa fa-skype"></i></a></li>
+                <li><a href="#."><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#."><i class="fa fa-dribbble"></i></a></li>
+              </ul>
+              
+                      </div>
+            
+                  </div>
+              </div>
+          </div>
+      
+      
+      <!-- Copyright
+      ============================================= -->
+          <p class="copyright text-center">Copyright © 2014 Medicom. All right reserved.</p>
+          
+      
+      <!-- Footer Bottom
+      ============================================= -->
+      <div class="container">
+            <div class="row">
+                <div class="col-md-2 mb-4"><a href="#."><img src="images/footer-logo.png" alt="" title="Medicom Logo"></a></div>
+                <div class="col-md-10">
+                    <p class="footer-bottom-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
+                  </div>
+              </div>
+          </div>
+      
+      
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>// Data Picker Initialization
+
+  $('.datepicker').datepicker({
+    inline: true,
+  });
+});
+</script>
+   
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
